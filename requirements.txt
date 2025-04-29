@@ -2,3 +2,5 @@ pandas
 openpyxl
 streamlit
 matplotlib
+msal
+ploty>=6.0.0
