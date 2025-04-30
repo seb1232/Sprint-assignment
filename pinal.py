@@ -754,7 +754,7 @@ def render_home():
     
     # Apple-style description
     st.markdown("""
-    <div class="apple-card" style='background-color: rgba(30, 33, 148, 0.7); padding: 30px; border-radius: 20px; margin: 40px 0 30px 0; backdrop-filter: blur(15px); animation: fadeInUp 0.8s ease-out;'>
+    <div class="apple-card" style='background-color: rgba(130, 33, 148, 0.7); padding: 30px; border-radius: 20px; margin: 40px 0 30px 0; backdrop-filter: blur(15px); animation: fadeInUp 0.8s ease-out;'>
         <h2 style="margin-bottom: 20px; font-size: 28px; font-weight: 500;">All-in-One Tool for Agile Teams</h2>
         <p style="margin-bottom: 20px; font-size: 18px; line-height: 1.6;">This integrated application provides comprehensive tools for managing agile projects with a beautiful, intuitive interface:</p>
         <ul class="staggered-fade" style="padding-left: 20px;">
