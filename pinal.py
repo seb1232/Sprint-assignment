@@ -731,14 +731,16 @@ def process_ai_message(prompt, retro_feedback, api_key):
 # =========== APPLICATION PAGES ===========
 
 def render_home():
-     st.markdown("""
+    s
+    st.markdown("""
     <style>
-        body, .stApp {
-            background-color: black !important;
-            color: #e0e0e0 !important;
-        }
+    body, .stApp {
+    background-color: black !important;
+    color: #e0e0e0 !important;
+    }
     </style>
     """, unsafe_allow_html=True)
+    
     
     # Apple-style animated header with floating elements
     st.markdown(
