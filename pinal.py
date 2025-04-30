@@ -26,11 +26,7 @@ st.markdown("""
     /* Include Apple-style animations */
     @import url('app/assets/apple_style.css');
     
-    body, .stApp {
-    background-color: black !important;
-    color: #e0e0e0 !important;
-}
-    
+
     /* Base styling */
     .main {
         background-color:  #0e1117 ;
