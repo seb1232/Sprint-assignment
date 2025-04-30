@@ -331,7 +331,7 @@ if "retro_feedback" not in st.session_state:
     st.session_state.retro_feedback = None
 if "ai_messages" not in st.session_state:
     st.session_state.ai_messages = [
-        {"role": "assistant", "content": "Hi! I'm your retrospective assistant. How can I help?"}
+        {"role": "assistant", "content": "Hi! I'm your retrospective and sprint assistant. How can I help?"}
     ]
 
 # Add main app navigation after the initialization of session state
