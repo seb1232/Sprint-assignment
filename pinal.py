@@ -63,7 +63,7 @@ st.markdown("""
         margin: 10px 5px;
         border-radius: 5px;
         text-decoration: none;
-        background-color: black;
+        background-color: 1e2130;
         color: #e0e0e0;
         transition: background-color 0.3s;
     }
