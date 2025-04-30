@@ -2097,7 +2097,15 @@ def render_sprint_task_planner():
                     st.session_state.ai_messages.append({"role": "assistant", "content": full_response})
 
 def render_retrospective_analysis():
-    st.title("Team Retrospective Analysis Tool")
+    st.markdown("""
+    <div class="animated-header">
+        <div class="floating-container"></div>
+        <h1 style="color: white; font-size: 48px; margin-bottom: 15px; text-align: center;">RetroSpective Analysis Tool</h1>
+        <p style="color: white; font-size: 18px; text-align: center; animation: fadeInUp 1s 0.5s forwards; opacity: 0; line-height: 1.6;">
+        A Tool for Analysis of feedback from Team Retrospectives   
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
     st.markdown("Upload multiple retrospective CSV files to analyze and compare feedback across team retrospectives.")
     
     # Sidebar for file upload and filtering controls
