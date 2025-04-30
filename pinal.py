@@ -731,7 +731,6 @@ def process_ai_message(prompt, retro_feedback, api_key):
 # =========== APPLICATION PAGES ===========
 
 def render_home():
-    s
     st.markdown("""
     <style>
     body, .stApp {
