@@ -797,7 +797,7 @@ def render_home():
     
     with col2:
         st.markdown("""
-        <div class="apple-card" style='background-color: rgba(76, 175, 80, 0.8); color: white; padding: 20px; border-radius: 15px; height: 220px; backdrop-filter: blur(10px);'>
+        <div class="apple-card" style='background-color: rgba(76, 175, 80, 0.8); color: white; padding: 20px; border-radius: 15px; height: auto; backdrop-filter: blur(10px);'>
             <h3 style="font-size: 24px; margin-bottom: 15px;">Retrospective Analysis Tool</h3>
             <p style="font-size: 16px; margin-bottom: 15px;">Consolidate and analyze feedback from team retrospectives</p>
             <ul class="staggered-fade">
