@@ -815,7 +815,7 @@ def render_sprint_task_planner():
     
     # Description with Apple-style card
     st.markdown("""
-    <div class="apple-card" style='background-color: rgba(30, 133, 48, 0.7); padding: 25px; border-radius: 20px; margin: 30px 0; backdrop-filter: blur(10px);'>
+    <div class="apple-card" style='background-color: rgba(30, 133, 148, 0.7); padding: 25px; border-radius: 20px; margin: 30px 0; backdrop-filter: blur(10px);'>
         <h3 style="margin-bottom: 15px; font-size: 22px;">Intelligent Sprint Planning</h3>
         <p style="margin-bottom: 20px; font-size: 16px; line-height: 1.6;">This application helps you plan and distribute tasks across multiple sprints with sophisticated algorithms, ensuring:</p>
         <ul class="staggered-fade" style="padding-left: 20px;">
