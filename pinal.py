@@ -2260,7 +2260,7 @@ def render_retrospective_analysis():
 
         if "ai_messages" not in st.session_state:
             st.session_state.ai_messages = [
-                {"role": "assistant", "content": "Hi! I'm your retrospective assistant. How can I help?"}
+                {"role": "assistant", "content": "Hi! I'm your SPrint assistant. How can I help?"}
             ]
 
         for msg in st.session_state.ai_messages:
