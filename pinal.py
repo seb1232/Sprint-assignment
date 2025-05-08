@@ -617,7 +617,7 @@ def compare_retrospectives(file_objects, min_votes, max_votes):
     for uploaded_file in file_objects:
         try:
             # Convert to string content
-            content = uploaded_file.getvalue().decode('ISO-8859-1')
+            content = uploaded_file.getvalue().decode('utf-8')
             lines = content.split('\n')
             
             # Find the header row
@@ -2066,7 +2066,7 @@ def render_sprint_task_planner():
                             if response.status_code == 200:
                                 for chunk in response.iter_lines():
                                     if chunk:
-                                        chunk_str = chunk.decode('ISO-8859-1')
+                                        chunk_str = chunk.decode('utf-8')
                                         if chunk_str.startswith("data:"):
                                             try:
                                                 data = json.loads(chunk_str[5:])
@@ -2310,7 +2310,7 @@ def render_retrospective_analysis():
                         if response.status_code == 200:
                             for chunk in response.iter_lines():
                                 if chunk:
-                                    chunk_str = chunk.decode("ISO-8859-1")
+                                    chunk_str = chunk.decode("utf-8")
                                     if chunk_str.startswith("data:") and chunk_str.strip() != "data: [DONE]":
                                         try:
                                             data = json.loads(chunk_str[5:])
