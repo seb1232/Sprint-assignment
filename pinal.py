@@ -617,7 +617,7 @@ def compare_retrospectives(file_objects, min_votes, max_votes):
     for uploaded_file in file_objects:
         try:
             # Convert to string content
-            content = uploaded_file.getvalue().decode('utf-8')
+            content = uploaded_file.getvalue().decode('ISO-8859-1')
             lines = content.split('\n')
             
             # Find the header row
