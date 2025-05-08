@@ -2066,7 +2066,7 @@ def render_sprint_task_planner():
                             if response.status_code == 200:
                                 for chunk in response.iter_lines():
                                     if chunk:
-                                        chunk_str = chunk.decode('utf-8')
+                                        chunk_str = chunk.decode('ISO-8859-1')
                                         if chunk_str.startswith("data:"):
                                             try:
                                                 data = json.loads(chunk_str[5:])
@@ -2310,7 +2310,7 @@ def render_retrospective_analysis():
                         if response.status_code == 200:
                             for chunk in response.iter_lines():
                                 if chunk:
-                                    chunk_str = chunk.decode("utf-8")
+                                    chunk_str = chunk.decode("ISO-8859-1")
                                     if chunk_str.startswith("data:") and chunk_str.strip() != "data: [DONE]":
                                         try:
                                             data = json.loads(chunk_str[5:])
