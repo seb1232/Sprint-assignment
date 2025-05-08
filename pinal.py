@@ -855,7 +855,7 @@ def render_sprint_task_planner():
         if uploaded_file is not None:
             try:
                 # Load data
-                df = pd.read_csv(uploaded_file)
+                df = pd.read_csv(uploaded_file,encoding='utf-16le')
                 
                 # Preview data
                 st.subheader("Data Preview")
