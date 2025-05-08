@@ -13,7 +13,7 @@ import io
 
 # Page Config
 st.set_page_config(
-    page_title="Agile Project Management Suite",
+    page_title="Scrum Copilot",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
