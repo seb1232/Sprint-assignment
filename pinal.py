@@ -746,7 +746,7 @@ def render_home():
         """
         <div class="animated-header">
             <div class="floating-container"></div>
-            <h1 class="typing-effect" style="color: white; font-size: 48px; margin-bottom: 15px; text-align: center;">Agile Project Management</h1>
+            <h1 class="typing-effect" style="color: white; font-size: 48px; margin-bottom: 15px; text-align: center;">Scrum CoPilot</h1>
             <h3 style="color: white; font-size: 24px; text-align: center; animation: fadeInUp 1s 0.5s forwards; opacity: 0;">Sprint Planning + Retrospective Analysis</h3>
         </div>
         """, 
