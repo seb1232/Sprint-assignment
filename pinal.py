@@ -617,7 +617,7 @@ def compare_retrospectives(file_objects, min_votes, max_votes):
     for uploaded_file in file_objects:
         try:
             # Convert to string content
-            content = uploaded_file.getvalue().decode('UTF-16')
+            content = uploaded_file.getvalue().decode('UTF-8')
             lines = content.split('\n')
             
             # Find the header row
@@ -855,7 +855,7 @@ def render_sprint_task_planner():
         if uploaded_file is not None:
             try:
                 # Load data
-                df = pd.read_csv(uploaded_file,encoding='UTF-16')
+                df = pd.read_csv(uploaded_file,encoding='UTF-8')
                 
                 # Preview data
                 st.subheader("Data Preview")
@@ -2066,7 +2066,7 @@ def render_sprint_task_planner():
                             if response.status_code == 200:
                                 for chunk in response.iter_lines():
                                     if chunk:
-                                        chunk_str = chunk.decode('UTF-16')
+                                        chunk_str = chunk.decode('UTF-8')
                                         if chunk_str.startswith("data:"):
                                             try:
                                                 data = json.loads(chunk_str[5:])
@@ -2310,7 +2310,7 @@ def render_retrospective_analysis():
                         if response.status_code == 200:
                             for chunk in response.iter_lines():
                                 if chunk:
-                                    chunk_str = chunk.decode("UTF-16")
+                                    chunk_str = chunk.decode("UTF-8")
                                     if chunk_str.startswith("data:") and chunk_str.strip() != "data: [DONE]":
                                         try:
                                             data = json.loads(chunk_str[5:])
