@@ -764,17 +764,6 @@ def render_home():
     """, unsafe_allow_html=True)
     
     # Apple-style description
-    st.markdown("""
-    <div class="apple-card" style='background-color: rgba(130, 133, 48, 0.7); padding: 30px; border-radius: 20px; margin: 40px 0 30px 0; backdrop-filter: blur(15px); animation: fadeInUp 0.8s ease-out;'>
-        <h2 style="margin-bottom: 20px; font-size: 28px; font-weight: 500;">All-in-One Tool for Agile Teams</h2>
-        <p style="margin-bottom: 20px; font-size: 18px; line-height: 1.6;">This integrated application provides comprehensive tools for managing agile projects with a beautiful, intuitive interface:</p>
-        <ul class="staggered-fade" style="padding-left: 20px;">
-            <li style="margin-bottom: 12px; font-size: 16px;"><strong>Sprint Task Planning:</strong> Optimize task assignment across sprints and team members</li>
-            <li style="margin-bottom: 12px; font-size: 16px;"><strong>Retrospective Analysis:</strong> Analyze feedback from multiple retrospectives</li>
-            <li style="margin-bottom: 12px; font-size: 16px;"><strong>Seamless Integration:</strong> Connect with Azure DevOps and other tools</li>
-        </ul>
-    </div>
-    """, unsafe_allow_html=True)
     
     col1, col2 = st.columns(2)
     
